@@ -33,7 +33,7 @@ const AuthProvider = ({ children }) => {
 const actualizarPerfil = async(datos) => {
         const token = localStorage.getItem('token')
         try {
-            const url = `${import.meta.env.VITE_BACKEND_URL}/veterinario/${datos.id}`
+            const url = `${import.meta.env.VITE_BACKEND_URL}/usuario/${datos.id}`
             const options = {
                 headers: {
                     method: 'PUT',
@@ -52,7 +52,7 @@ const actualizarPerfil = async(datos) => {
 const actualizarPassword = async (datos) => {
     const token = localStorage.getItem('token')
     try {
-        const url = `${import.meta.env.VITE_BACKEND_URL}/veterinario/actualizarpassword`
+        const url = `${import.meta.env.VITE_BACKEND_URL}/usuario/actualizarpassword`
         const options = {
             headers: {
                 method: 'PUT',
